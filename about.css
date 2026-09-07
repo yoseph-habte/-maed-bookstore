@@ -1,0 +1,117 @@
+/* About page specific styles */
+
+.about-hero {
+    padding: 60px 0 30px;
+    text-align: center;
+}
+
+.about-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.our-story {
+    padding: 40px 0;
+}
+
+.our-story p {
+    max-width: 750px;
+}
+
+.values {
+    padding: 40px 0;
+}
+
+.value-cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    padding: 25px;
+    flex: 1;
+    min-width: 220px;
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+/* FAQ Accordion */
+.faq {
+    padding: 40px 0 60px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--secondary);
+}
+
+.accordion-btn {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 18px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-btn::after {
+    content: "+";
+    font-size: 22px;
+    color: var(--primary);
+}
+
+.accordion-btn.active::after {
+    content: "-";
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+    padding-bottom: 15px;
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--primary);
+    color: var(--bg);
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+    background-color: var(--accent);
+    color: var(--text);
+}
+
+@media (max-width: 768px) {
+    .value-cards {
+        flex-direction: column;
+    }
+}
