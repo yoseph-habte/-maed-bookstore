@@ -6,4 +6,4 @@ A simple online bookstore website built as a group project for our ISHUB fronten
 
 **Built with:** HTML, CSS, JavaScript
 
-**Group members:** [Yoseph Habte, Tsiyon Erku]
+**Group members:** [Yoseph Habte, Tsiyon Erku and Hermela Mezgebu]
