@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ማእድ | Catalog</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">ማእድ<span>.</span></a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html" class="active">Catalog</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="#" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Catalog Header & Search Bar -->
+  <section class="catalog-header">
+    <h1>Book Catalog</h1>
+    <p>Browse our entire collection and find your next read</p>
+    <div class="search-bar-container">
+      <input type="text" id="search-input" placeholder="Search by book title or author...">
+    </div>
+  </section>
+
+  <!-- Main Catalog Layout (Sidebar + Grid) -->
+  <div class="catalog-layout">
+    
+    <!-- Filter Sidebar -->
+    <aside class="filter-sidebar">
+      <h3>Categories</h3>
+      <ul class="filter-list">
+        <li><button class="filter-btn active" data-filter="all">All Books</button></li>
+        <li><button class="filter-btn" data-filter="fiction">Fiction / Literature</button></li>
+        <li><button class="filter-btn" data-filter="tech">Technology & Code</button></li>
+        <li><button class="filter-btn" data-filter="design">Art & UI/UX Design</button></li>
+      </ul>
+    </aside>
+
+    <!-- Books Grid -->
+    <main class="catalog-grid-container">
+      <div class="book-grid" id="book-grid">
+        
+        <!-- Book 1 -->
+        <div class="book-card" data-category="fiction" data-title="የሕይወት መንገድ" data-author="Author Name">
+          <div class="book-img-placeholder">📖</div>
+          <div class="book-info">
+            <h3>የሕይወት መንገድ</h3>
+            <p class="author">By Author Name</p>
+            <span class="price">$18.99</span>
+            <button class="btn-card add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card" data-category="tech" data-title="Frontend Development" data-author="Tech Series">
+          <div class="book-img-placeholder">💻</div>
+          <div class="book-info">
+            <h3>Frontend Development</h3>
+            <p class="author">By Tech Series</p>
+            <span class="price">$24.50</span>
+            <button class="btn-card add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-card" data-category="design" data-title="Art of Design" data-author="Creative Minds">
+          <div class="book-img-placeholder">✨</div>
+          <div class="book-info">
+            <h3>Art of Design</h3>
+            <p class="author">By Creative Minds</p>
+            <span class="price">$21.00</span>
+            <button class="btn-card add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book-card" data-category="fiction" data-title="Ethiopian Tales" data-author="Dawit Bekele">
+          <div class="book-img-placeholder">📚</div>
+          <div class="book-info">
+            <h3>Ethiopian Tales</h3>
+            <p class="author">By Dawit Bekele</p>
+            <span class="price">$15.00</span>
+            <button class="btn-card add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Book 5 -->
+        <div class="book-card" data-category="tech" data-title="Mastering JavaScript" data-author="Code Academy">
+          <div class="book-img-placeholder">⚡</div>
+          <div class="book-info">
+            <h3>Mastering JavaScript</h3>
+            <p class="author">By Code Academy</p>
+            <span class="price">$29.99</span>
+            <button class="btn-card add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Book 6 -->
+        <div class="book-card" data-category="design" data-title="UI/UX Simplified" data-author="Sarah Johnson">
+          <div class="book-img-placeholder">🎨</div>
+          <div class="book-info">
+            <h3>UI/UX Simplified</h3>
+            <p class="author">By Sarah Johnson</p>
+            <span class="price">$27.50</span>
+            <button class="btn-card add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- No Results Message -->
+      <div id="no-results" class="no-results" style="display: none;">
+        <p>No books found matching your search. Try another title or category!</p>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 ማእድ Book Store. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript Link -->
+  <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ማእድ | Home</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">ማእድ<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="catalog.html" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to ማእድ</h1>
+      <p>A gathering place for minds and stories. Discover books that inspire, educate, and transport you to new worlds.</p>
+      <div class="hero-buttons">
+        <a href="catalog.html" class="btn-primary">Explore Catalog</a>
+        <a href="#featured" class="btn-secondary">Featured Books</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Books Section -->
+  <section id="featured" class="featured-section">
+    <div class="section-title">
+      <h2>Featured Titles</h2>
+      <p>Handpicked favorites from our collection</p>
+    </div>
+    
+    <div class="book-grid">
+      <!-- Book 1 -->
+      <div class="book-card">
+        <div class="book-img-placeholder">📖</div>
+        <div class="book-info">
+          <h3>የሕይወት መንገድ</h3>
+          <p class="author">By Author Name</p>
+          <span class="price">$18.99</span>
+          <button class="btn-card add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Book 2 -->
+      <div class="book-card">
+        <div class="book-img-placeholder">💻</div>
+        <div class="book-info">
+          <h3>Frontend Development</h3>
+          <p class="author">By Tech Series</p>
+          <span class="price">$24.50</span>
+          <button class="btn-card add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Book 3 -->
+      <div class="book-card">
+        <div class="book-img-placeholder">✨</div>
+        <div class="book-info">
+          <h3>Art of Design</h3>
+          <p class="author">By Creative Minds</p>
+          <span class="price">$21.00</span>
+          <button class="btn-card add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 ማእድ Book Store. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript Link -->
+  <script src="home.js"></script>
+</body>
+</html>
